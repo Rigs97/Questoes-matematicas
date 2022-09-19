@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+typedef enum{
+    domingo = 0,segunda,terca,quarta,quinta,sexta,sabado
+    }semana;
+
+int main()
+{
+    setlocale(LC_ALL,"portuguese");
+semana dia = sexta;
+    printf("A posição do dia é: %d",dia);
+
+return 0;
+}
