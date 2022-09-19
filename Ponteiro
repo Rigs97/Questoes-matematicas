@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+
+int main()
+{
+    int eduardo = 20161035;
+    int a = eduardo ;
+    int *b = &eduardo;
+    //int c = b;
+    int d = *b;
+
+    setlocale(LC_ALL,"portuguese");
+
+    printf("A matrícula de Eduardo é: %d\n\n",eduardo);
+
+    printf("O valor de A é: %d \n\n",a);
+
+    printf("O valor de B é: %d \n\n",b);
+
+    //printf("O valor de C é: %d \n\n",c);
+
+    printf("O valor de D é: %d \n\n",d);
+
+
+
+
+    return 0;
+}
