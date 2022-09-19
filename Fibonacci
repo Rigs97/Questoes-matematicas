@@ -1,0 +1,15 @@
+fibo= int(input("\033[32mDigite qual número deseja verificar: \033[m"))
+
+k1 = 0
+k2 = 1
+k3 = 0
+while fibo > k3:
+    k3 = k1 + k2
+    k1 = k2
+    k2 = k3
+if fibo == 0 or fibo == 1:
+    print (f"O número \033[33m{fibo}\033[m pertence a sequência de Fibonacci !")
+elif fibo == k3:
+    print (f"O número \033[33m{fibo}\033[m pertence a sequência de Fibonacci !")
+else:
+    print (f"\033[31mO número \033[33m{fibo}\033[m \033[31mnão faz parte da sequência de Fibonacci.\033[m")
