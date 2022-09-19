@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+union produto{
+    int quantidade;
+    float valor;
+    double peso;
+};
+
+int main(){
+    union produto pdt;
+
+    pdt.quantidade = 3;
+    printf("Quantidade de produtos: %d\n", pdt.quantidade);
+
+    pdt.valor = 22.50;
+    printf("Valor do produto: %.2f\n", pdt.valor);
+
+    pdt.peso = 2.9;
+    printf("Peso do produto: %.2lf\n", pdt.peso);
+}
