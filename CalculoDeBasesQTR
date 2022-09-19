@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int quadrado (int a, int b){
+    return (a * b);
+}
+
+int triangulo (int c, int d){
+    return ((c * d)/2);
+}
+
+int retangulo (int e, int f){
+    return (e * f);
+}
+
+
+
+int main()
+{
+int base1, base2,altura;
+
+    setlocale(LC_ALL,"portuguese");
+    
+    //Calcular a Àrea do Quadrado
+    printf("Digite o valor das duas bases para calcular a área do quadrado: \n");
+    scanf("%d %d",&base1,&base2);
+    printf("O resultado é: %d\n\n\n",quadrado(base1,base2));
+    
+    //Calcular a Àrea do Triangulo
+    printf("Qual o valor da base e altura do triângulo: \n");
+    scanf("%d %d",&base1,&altura);
+    printf("O resultado do triângulo é: %d\n\n\n",triangulo(base1,altura));
+
+    //Calcular a Àrea do Retângulo
+    printf("Qual o valor da base e altura do retângulo: \n");
+    scanf("%d %d",&base1,&altura);
+    printf("O resultado do Retângulo é: %d\n\n\n",retangulo(base1,altura));
+
+return 0;
+}
